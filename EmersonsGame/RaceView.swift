@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RaceView.swift
 //  EmersonsGame
 //
 //  Created by Ealden Escañan on 5/10/20.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct RaceView: View {
     var body: some View {
         VStack {
             List {
@@ -46,8 +46,8 @@ struct RacerRow: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RaceView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        RaceView()
     }
 }
