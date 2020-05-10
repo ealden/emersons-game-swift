@@ -14,6 +14,7 @@
 		F317ECB02467D5620071574D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F317ECAF2467D5620071574D /* Preview Assets.xcassets */; };
 		F317ECB32467D5620071574D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F317ECB12467D5620071574D /* LaunchScreen.storyboard */; };
 		F388792F2467F7FC004C4468 /* EmersonsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388792E2467F7FC004C4468 /* EmersonsGameTests.swift */; };
+		F38879382467F895004C4468 /* RacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38879372467F895004C4468 /* RacerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F388792C2467F7FC004C4468 /* EmersonsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmersonsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F388792E2467F7FC004C4468 /* EmersonsGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmersonsGameTests.swift; sourceTree = "<group>"; };
 		F38879302467F7FC004C4468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F38879372467F895004C4468 /* RacerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +103,19 @@
 		F388792D2467F7FC004C4468 /* EmersonsGameTests */ = {
 			isa = PBXGroup;
 			children = (
+				F38879362467F855004C4468 /* Models */,
 				F388792E2467F7FC004C4468 /* EmersonsGameTests.swift */,
 				F38879302467F7FC004C4468 /* Info.plist */,
 			);
 			path = EmersonsGameTests;
+			sourceTree = "<group>";
+		};
+		F38879362467F855004C4468 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F38879372467F895004C4468 /* RacerTests.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F388792F2467F7FC004C4468 /* EmersonsGameTests.swift in Sources */,
+				F38879382467F895004C4468 /* RacerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
