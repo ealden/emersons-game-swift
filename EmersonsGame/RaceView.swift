@@ -46,6 +46,10 @@ struct RacerRow: View {
     }
 }
 
+struct Racer {
+    var name: String
+}
+
 struct RaceView_Previews: PreviewProvider {
     static var previews: some View {
         RaceView()
