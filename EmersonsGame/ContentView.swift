@@ -18,6 +18,15 @@ struct ContentView: View {
                 RacerRow(racer: "Dave")
             }
             Spacer()
+            HStack {
+                Button(action: {}) {
+                    Text("NORMAL SPEED")
+                }
+                Button(action: {}) {
+                    Text("SUPER SPEED")
+                }
+            }
+            .padding()
         }
     }
 }
