@@ -11,6 +11,16 @@ import Foundation
 class Racer: Identifiable {
     enum Speed {
         case NORMAL, SUPER
+        
+        func calculate(_ roll: Int) -> Int {
+            var calculatedRoll = roll
+            
+            if self == .NORMAL {
+                calculatedRoll = (roll.isMultiple(of: 2)) ? 2 : 1
+            }
+            
+            return calculatedRoll
+        }
     }
     
     var id = UUID()
@@ -23,14 +33,6 @@ class Racer: Identifiable {
     }
     
     func roll(_ roll: Int, speed: Speed) {
-        if speed == .NORMAL {
-            if roll.isMultiple(of: 2) {
-                self.position += 2
-            } else {
-                self.position += 1
-            }
-        } else if speed == .SUPER {
-            self.position += roll
-        }
+        self.position += speed.calculate(roll)
     }
 }
