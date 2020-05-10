@@ -54,8 +54,8 @@ let racers = [
 struct Racer: Identifiable {
     var id = UUID()
     var name: String
-    var position: Int = 0
-    var finishLine: Int = 10
+    var position = 0
+    var finishLine = 10
 }
 
 struct RaceView_Previews: PreviewProvider {
