@@ -16,6 +16,7 @@
 		F388792F2467F7FC004C4468 /* EmersonsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388792E2467F7FC004C4468 /* EmersonsGameTests.swift */; };
 		F38879382467F895004C4468 /* RacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38879372467F895004C4468 /* RacerTests.swift */; };
 		F388793E24683BFE004C4468 /* Racer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388793D24683BFE004C4468 /* Racer.swift */; };
+		F388794024683FC4004C4468 /* SpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388793F24683FC4004C4468 /* SpeedTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		F38879302467F7FC004C4468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F38879372467F895004C4468 /* RacerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerTests.swift; sourceTree = "<group>"; };
 		F388793D24683BFE004C4468 /* Racer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racer.swift; sourceTree = "<group>"; };
+		F388793F24683FC4004C4468 /* SpeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				F38879372467F895004C4468 /* RacerTests.swift */,
+				F388793F24683FC4004C4468 /* SpeedTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F388794024683FC4004C4468 /* SpeedTests.swift in Sources */,
 				F388792F2467F7FC004C4468 /* EmersonsGameTests.swift in Sources */,
 				F38879382467F895004C4468 /* RacerTests.swift in Sources */,
 			);
