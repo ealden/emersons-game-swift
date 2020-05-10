@@ -17,6 +17,7 @@
 		F38879382467F895004C4468 /* RacerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F38879372467F895004C4468 /* RacerTests.swift */; };
 		F388793E24683BFE004C4468 /* Racer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388793D24683BFE004C4468 /* Racer.swift */; };
 		F388794024683FC4004C4468 /* SpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388793F24683FC4004C4468 /* SpeedTests.swift */; };
+		F3887942246840EF004C4468 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3887941246840EF004C4468 /* Speed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F38879372467F895004C4468 /* RacerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RacerTests.swift; sourceTree = "<group>"; };
 		F388793D24683BFE004C4468 /* Racer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Racer.swift; sourceTree = "<group>"; };
 		F388793F24683FC4004C4468 /* SpeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedTests.swift; sourceTree = "<group>"; };
+		F3887941246840EF004C4468 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				F388793D24683BFE004C4468 /* Racer.swift */,
+				F3887941246840EF004C4468 /* Speed.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 				F317ECA72467D5610071574D /* AppDelegate.swift in Sources */,
 				F317ECA92467D5610071574D /* SceneDelegate.swift in Sources */,
 				F317ECAB2467D5610071574D /* RaceView.swift in Sources */,
+				F3887942246840EF004C4468 /* Speed.swift in Sources */,
 				F388793E24683BFE004C4468 /* Racer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,20 +9,6 @@
 import Foundation
 
 class Racer: Identifiable {
-    enum Speed {
-        case NORMAL, SUPER
-        
-        func calculate(_ roll: Int) -> Int {
-            var calculatedRoll = roll
-            
-            if self == .NORMAL {
-                calculatedRoll = (roll.isMultiple(of: 2)) ? 2 : 1
-            }
-            
-            return calculatedRoll
-        }
-    }
-    
     var id = UUID()
     var name: String
     var position = 0
