@@ -51,29 +51,6 @@ let racers = [
     Racer(name: "Dave")
 ]
 
-class Racer: Identifiable {
-    enum Speed {
-        case NORMAL, SUPER
-    }
-    
-    var id = UUID()
-    var name: String
-    var position = 0
-    var finishLine = 10
-    
-    init(name: String) {
-        self.name = name
-    }
-    
-    func roll(_ roll: Int, speed: Speed) {
-        if roll.isMultiple(of: 2) {
-            self.position += 2
-        } else {
-            self.position += 1
-        }
-    }
-}
-
 struct RaceView_Previews: PreviewProvider {
     static var previews: some View {
         RaceView()
