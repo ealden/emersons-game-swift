@@ -51,11 +51,23 @@ let racers = [
     Racer(name: "Dave")
 ]
 
-struct Racer: Identifiable {
+class Racer: Identifiable {
+    enum Speed {
+        case NORMAL, SUPER
+    }
+    
     var id = UUID()
     var name: String
     var position = 0
     var finishLine = 10
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func roll(_ roll: Int, speed: Speed) {
+        self.position += 1
+    }
 }
 
 struct RaceView_Previews: PreviewProvider {
