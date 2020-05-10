@@ -12,7 +12,7 @@ struct RaceView: View {
     var body: some View {
         VStack {
             List(racers) { racer in
-                RacerRow(racer: racer.name)
+                RacerRow(racer: racer)
             }
             Spacer()
             HStack {
@@ -29,13 +29,13 @@ struct RaceView: View {
 }
 
 struct RacerRow: View {
-    var racer: String
+    var racer: Racer
     
     var body: some View {
         HStack {
             Image(systemName: "car")
                 .foregroundColor(.red)
-            Text(racer)
+            Text(racer.name)
             Spacer()
         }
         .font(.headline)
