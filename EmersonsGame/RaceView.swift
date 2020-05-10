@@ -66,7 +66,11 @@ class Racer: Identifiable {
     }
     
     func roll(_ roll: Int, speed: Speed) {
-        self.position += 1
+        if roll.isMultiple(of: 2) {
+            self.position += 2
+        } else {
+            self.position += 1
+        }
     }
 }
 

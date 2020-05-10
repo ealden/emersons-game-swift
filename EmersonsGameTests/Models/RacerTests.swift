@@ -29,4 +29,18 @@ class RacerTests: XCTestCase {
         XCTAssertEqual(racer2.position, 1)
         XCTAssertEqual(racer3.position, 1)
     }
+    
+    func testRollMustMustMovePositionBy2IfEvenAndNormalSpeed() {
+        let racer = Racer(name: "Racer 1")
+        let racer2 = Racer(name: "Racer 2")
+        let racer3 = Racer(name: "Racer 3")
+        
+        racer.roll(2, speed: .NORMAL)
+        racer2.roll(4, speed: .NORMAL)
+        racer3.roll(6, speed: .NORMAL)
+        
+        XCTAssertEqual(racer.position, 2)
+        XCTAssertEqual(racer2.position, 2)
+        XCTAssertEqual(racer3.position, 2)
+    }
 }
