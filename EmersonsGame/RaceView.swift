@@ -37,7 +37,7 @@ struct RacerRow: View {
                 .foregroundColor(.red)
             Text(racer.name)
             Spacer()
-            Text("\(racer.position)")
+            Text("\(racer.position) / \(racer.finishLine)")
         }
         .font(.headline)
         .padding()
@@ -55,6 +55,7 @@ struct Racer: Identifiable {
     var id = UUID()
     var name: String
     var position: Int = 0
+    var finishLine: Int = 10
 }
 
 struct RaceView_Previews: PreviewProvider {
