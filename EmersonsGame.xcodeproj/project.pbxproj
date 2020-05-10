@@ -13,7 +13,18 @@
 		F317ECAD2467D5620071574D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F317ECAC2467D5620071574D /* Assets.xcassets */; };
 		F317ECB02467D5620071574D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F317ECAF2467D5620071574D /* Preview Assets.xcassets */; };
 		F317ECB32467D5620071574D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F317ECB12467D5620071574D /* LaunchScreen.storyboard */; };
+		F388792F2467F7FC004C4468 /* EmersonsGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F388792E2467F7FC004C4468 /* EmersonsGameTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F38879312467F7FC004C4468 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F317EC9B2467D5610071574D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F317ECA22467D5610071574D;
+			remoteInfo = EmersonsGame;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		F317ECA32467D5610071574D /* EmersonsGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmersonsGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,20 @@
 		F317ECAF2467D5620071574D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F317ECB22467D5620071574D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F317ECB42467D5620071574D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F388792C2467F7FC004C4468 /* EmersonsGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmersonsGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F388792E2467F7FC004C4468 /* EmersonsGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmersonsGameTests.swift; sourceTree = "<group>"; };
+		F38879302467F7FC004C4468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F317ECA02467D5610071574D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F38879292467F7FC004C4468 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				F317ECA52467D5610071574D /* EmersonsGame */,
+				F388792D2467F7FC004C4468 /* EmersonsGameTests */,
 				F317ECA42467D5610071574D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				F317ECA32467D5610071574D /* EmersonsGame.app */,
+				F388792C2467F7FC004C4468 /* EmersonsGameTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +98,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		F388792D2467F7FC004C4468 /* EmersonsGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				F388792E2467F7FC004C4468 /* EmersonsGameTests.swift */,
+				F38879302467F7FC004C4468 /* Info.plist */,
+			);
+			path = EmersonsGameTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,6 +127,24 @@
 			productReference = F317ECA32467D5610071574D /* EmersonsGame.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F388792B2467F7FC004C4468 /* EmersonsGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F38879332467F7FC004C4468 /* Build configuration list for PBXNativeTarget "EmersonsGameTests" */;
+			buildPhases = (
+				F38879282467F7FC004C4468 /* Sources */,
+				F38879292467F7FC004C4468 /* Frameworks */,
+				F388792A2467F7FC004C4468 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F38879322467F7FC004C4468 /* PBXTargetDependency */,
+			);
+			name = EmersonsGameTests;
+			productName = EmersonsGameTests;
+			productReference = F388792C2467F7FC004C4468 /* EmersonsGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -107,6 +157,10 @@
 				TargetAttributes = {
 					F317ECA22467D5610071574D = {
 						CreatedOnToolsVersion = 11.4.1;
+					};
+					F388792B2467F7FC004C4468 = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = F317ECA22467D5610071574D;
 					};
 				};
 			};
@@ -124,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				F317ECA22467D5610071574D /* EmersonsGame */,
+				F388792B2467F7FC004C4468 /* EmersonsGameTests */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +191,13 @@
 				F317ECB32467D5620071574D /* LaunchScreen.storyboard in Resources */,
 				F317ECB02467D5620071574D /* Preview Assets.xcassets in Resources */,
 				F317ECAD2467D5620071574D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F388792A2467F7FC004C4468 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +214,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F38879282467F7FC004C4468 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F388792F2467F7FC004C4468 /* EmersonsGameTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F38879322467F7FC004C4468 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F317ECA22467D5610071574D /* EmersonsGame */;
+			targetProxy = F38879312467F7FC004C4468 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F317ECB12467D5620071574D /* LaunchScreen.storyboard */ = {
@@ -293,7 +371,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.escanan.ealden.race.EmersonsGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.escanan.ealden.EmersonsGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,10 +391,50 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.escanan.ealden.race.EmersonsGame;
+				PRODUCT_BUNDLE_IDENTIFIER = com.escanan.ealden.EmersonsGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F38879342467F7FC004C4468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QXSJ8S8ZD;
+				INFOPLIST_FILE = EmersonsGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.escanan.ealden.EmersonsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmersonsGame.app/EmersonsGame";
+			};
+			name = Debug;
+		};
+		F38879352467F7FC004C4468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9QXSJ8S8ZD;
+				INFOPLIST_FILE = EmersonsGameTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.escanan.ealden.EmersonsGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmersonsGame.app/EmersonsGame";
 			};
 			name = Release;
 		};
@@ -337,6 +455,15 @@
 			buildConfigurations = (
 				F317ECB82467D5620071574D /* Debug */,
 				F317ECB92467D5620071574D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F38879332467F7FC004C4468 /* Build configuration list for PBXNativeTarget "EmersonsGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F38879342467F7FC004C4468 /* Debug */,
+				F38879352467F7FC004C4468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
