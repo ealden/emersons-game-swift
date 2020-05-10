@@ -46,6 +46,13 @@ struct RacerRow: View {
     }
 }
 
+let racers = [
+    Racer(name: "Alice"),
+    Racer(name: "Bob"),
+    Racer(name: "Charlie"),
+    Racer(name: "Dave")
+]
+
 struct Racer {
     var name: String
 }
