@@ -11,11 +11,8 @@ import SwiftUI
 struct RaceView: View {
     var body: some View {
         VStack {
-            List {
-                RacerRow(racer: "Alice")
-                RacerRow(racer: "Bob")
-                RacerRow(racer: "Charlie")
-                RacerRow(racer: "Dave")
+            List(racers) { racer in
+                RacerRow(racer: racer.name)
             }
             Spacer()
             HStack {
@@ -53,7 +50,8 @@ let racers = [
     Racer(name: "Dave")
 ]
 
-struct Racer {
+struct Racer: Identifiable {
+    var id = UUID()
     var name: String
 }
 
